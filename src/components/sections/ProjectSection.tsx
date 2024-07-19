@@ -60,14 +60,14 @@ const ProjectSection = () => {
         <CaretCircleDown size={36} weight="duotone" />
       </a>
       <motion.h1
-        className="text-5xl font-bold text-blue-800 mt-10"
+        className="text-5xl font-bold text-blue-800 mt-10 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        Project Showcase
+        Projects Showcase
       </motion.h1>
-      <div className="flex flex-col md:flex-row justify-between gap-5 w-full px-10">
+      <div className="flex flex-col md:flex-row justify-between gap-5 w-full md:px-10">
         {projects.length > 0 &&
           projects.map((project: Project) => (
             <ProjectCard key={project.id} {...project} />

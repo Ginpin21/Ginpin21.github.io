@@ -44,6 +44,7 @@ const Nav = () => {
             </button>
             {navLinks.map((link) => (
               <motion.a
+                key={link.href}
                 href={link.href}
                 initial={{
                   borderBottom: "1px solid transparent",

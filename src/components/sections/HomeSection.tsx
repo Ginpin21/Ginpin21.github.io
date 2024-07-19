@@ -19,7 +19,7 @@ const HomeSection = () => {
           className="text-4xl text-center md:text-left md:text-5xl font-bold"
           initial={{ x: "-100%", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, type: "spring" }}
+          transition={{ delay: 0.5, duration: 1, type: "spring" }}
         >
           Hi there, I am <span className="text-blue-800">IFTAKHAR AHMED</span>
         </motion.h1>
@@ -27,7 +27,7 @@ const HomeSection = () => {
           className="text-3xl text-center md:text-left"
           initial={{ x: "-100%", opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 1, type: "spring" }}
+          transition={{ delay: 0.5, duration: 1, type: "spring" }}
         >
           Full Stack Web Developer <b>|</b> Software Engineer
         </motion.p>

@@ -26,7 +26,7 @@ const SkillsSection = () => {
   return (
     <motion.section
       id="skills"
-      className="font-ubuntu h-full relative p-5 container flex  items-center justify-center gap-20 snap-start snap-always"
+      className="font-ubuntu h-full relative p-5 container flex flex-col md:flex-row items-center justify-center gap-20 snap-start snap-always"
     >
       <a href="#about" className="absolute right-2 top-10 hover:text-blue-800">
         <CaretCircleUp size={36} weight="duotone" />
