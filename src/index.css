@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    @font-face {
+      font-family: 'Tungsten-Bold';
+      font-weight: 100;
+      src: url('./assets/Tungsten-Bold.ttf') format("ttf");
+    }
+    @font-face {
+      font-family: 'Virgil';
+      font-weight: 500;
+      src: url('./assets/Virgil.woff2') format("woff2");
+    }
+  }
+
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #F1FADA;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2D9596;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
