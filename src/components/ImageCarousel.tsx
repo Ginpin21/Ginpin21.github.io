@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { CaretRight, CaretLeft } from "@phosphor-icons/react";
 import { motion, AnimatePresence } from "framer-motion";
-import ImageModal from "./ImageModal";
 type Props = {
   imgList: string[];
 };
 const ImageCarousel = ({ imgList }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const changeImageIndex = (increase: boolean) => {
     setDirection(increase ? 1 : -1);
@@ -59,7 +57,6 @@ const ImageCarousel = ({ imgList }: Props) => {
                         bounce: 0.2,
                       }}
                       alt=""
-                      onClick={() => setIsModalOpen(true)}
                       className="object-cover h-full w-full rounded-md hover:cursor-pointer"
                     />
                   )
@@ -74,11 +71,6 @@ const ImageCarousel = ({ imgList }: Props) => {
             </button>
           </div>
         </AnimatePresence>
-        <ImageModal
-          imgURL={imgList[currentIndex]}
-          isOpen={isModalOpen}
-          setIsOpen={setIsModalOpen}
-        />
       </>
     );
   }
