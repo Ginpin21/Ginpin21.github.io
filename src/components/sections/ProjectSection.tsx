@@ -1,4 +1,3 @@
-import { CaretCircleUp, CaretCircleDown } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 
 import ProjectCard from "../ProjectCard";
@@ -47,18 +46,18 @@ const ProjectSection = () => {
       id="projects"
       className="font-ubuntu container min-h-screen snap-start snap-always flex flex-col items-center gap-10 relative p-5"
     >
-      <a
+      {/* <a
         href="#skills"
         className="absolute right-2 top-10 hover:text-blue-800 z-50"
       >
-        <CaretCircleUp size={36} weight="duotone" />
+        <CaretCircleUp size={24} weight="duotone" />
       </a>
       <a
         href="#contact"
         className="absolute right-2 bottom-10 hover:text-blue-800 z-50"
       >
-        <CaretCircleDown size={36} weight="duotone" />
-      </a>
+        <CaretCircleDown size={24} weight="duotone" />
+      </a> */}
       <motion.h1
         className="text-5xl font-bold text-blue-800 mt-10 text-center"
         initial={{ opacity: 0 }}

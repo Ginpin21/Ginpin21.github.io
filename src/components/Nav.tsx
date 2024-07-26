@@ -64,7 +64,7 @@ const Nav = () => {
       </AnimatePresence>
       {!showNav && (
         <button
-          className="text-blue-900 text-3xl z-50 fixed top-5 left-5"
+          className="text-blue-900 text-3xl z-50 sticky top-5 left-5 backdrop-blur "
           onClick={() => useUIStore.setState({ showNav: true })}
         >
           <List weight="bold" />

@@ -1,4 +1,3 @@
-import { CaretCircleUp, CaretCircleDown } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import TailwindLogo from "../../assets/skills/TailwindCSS.png";
 import ReactLogo from "../../assets/skills/React.png";
@@ -28,15 +27,15 @@ const SkillsSection = () => {
       id="skills"
       className="font-ubuntu h-full relative p-5 container flex flex-col md:flex-row items-center justify-center gap-20 snap-start snap-always"
     >
-      <a href="#about" className="absolute right-2 top-10 hover:text-blue-800">
-        <CaretCircleUp size={36} weight="duotone" />
+      {/* <a href="#about" className="absolute right-2 top-10 hover:text-blue-800">
+        <CaretCircleUp size={24} weight="duotone" />
       </a>
       <a
         href="#projects"
         className="absolute right-2 bottom-10 hover:text-blue-800"
       >
-        <CaretCircleDown size={36} weight="duotone" />
-      </a>
+        <CaretCircleDown size={24} weight="duotone" />
+      </a> */}
       <motion.h1
         className="text-5xl font-bold text-blue-800"
         initial={{ opacity: 0 }}
@@ -48,6 +47,7 @@ const SkillsSection = () => {
       <div className="grid grid-cols-3 items-center gap-5">
         {skillLogos.map((logo, index) => (
           <motion.img
+            loading="lazy"
             key={index}
             src={logo}
             className="w-36"

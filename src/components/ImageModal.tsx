@@ -18,7 +18,7 @@ const ImageModal = ({ imgURL, isOpen, setIsOpen }: Props) => {
             className="absolute top-4 right-4 text-white"
             onClick={() => setIsOpen(false)}
           >
-            <PhosphorClose size={36} weight="bold" />
+            <PhosphorClose size={24} weight="bold" />
           </button>
           <div
             className="w-full md:w-3/4 h-full relative"
@@ -28,6 +28,7 @@ const ImageModal = ({ imgURL, isOpen, setIsOpen }: Props) => {
           >
             <img
               src={imgURL}
+              loading="lazy"
               alt=""
               className="h-full w-full object-contain rounded-xl"
             />

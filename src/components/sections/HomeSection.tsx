@@ -1,4 +1,4 @@
-import { CaretCircleDown } from "@phosphor-icons/react";
+// import { CaretCircleDown } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import portraitURL from "./../../assets/Stolen_coat.png";
 
@@ -8,12 +8,12 @@ const HomeSection = () => {
       id="home"
       className="font-ubuntu h-full relative px-5 container flex flex-col md:flex-row items-center justify-end md:justify-center gap-20 snap-start snap-always"
     >
-      <a
+      {/* <a
         href="#about"
         className="absolute right-2 bottom-10 hover:text-blue-800"
       >
-        <CaretCircleDown size={36} weight="duotone" />
-      </a>
+        <CaretCircleDown size={24} weight="duotone" />
+      </a> */}
       <div className="flex flex-col gap-5">
         <motion.h1
           className="text-4xl text-center md:text-left md:text-5xl font-bold"
@@ -34,6 +34,7 @@ const HomeSection = () => {
       </div>
       <motion.img
         src={portraitURL}
+        loading="lazy"
         alt=""
         className="md:max-h-[700px] max-h-[400px] md:min-h-96 md:self-end"
         initial={{ y: 20, opacity: 0 }}

@@ -1,5 +1,4 @@
 import {
-  CaretCircleUp,
   Envelope,
   Phone,
   WhatsappLogo,
@@ -14,12 +13,12 @@ const ContactSection = () => {
       id="contact"
       className="font-ubuntu container h-full snap-start snap-always flex flex-col items-center justify-center gap-5 relative"
     >
-      <a
+      {/* <a
         href="#projects"
         className="absolute right-2 top-10 hover:text-blue-800"
       >
-        <CaretCircleUp size={36} weight="duotone" />
-      </a>
+        <CaretCircleUp size={24} weight="duotone" />
+      </a> */}
 
       <motion.h1
         className="text-5xl font-bold text-blue-800"
@@ -35,24 +34,24 @@ const ContactSection = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium md:border-r-2 border-black px-2">
+        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium md:border-r-2 border-slate-300 px-2 hover:font-bold active:font-bold">
           <Envelope size={24} weight="duotone" />
           <a href="mailto:iftekharahmed2003@gmail">
             iftekharahmed2003@gmail.com
           </a>
         </div>
-        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium md:border-r-2 border-black px-2">
+        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium md:border-r-2 border-slate-300 px-2 hover:font-bold active:font-bold">
           <Phone size={24} weight="duotone" /> &
           <WhatsappLogo size={24} weight="duotone" />
           <a href="tel:+971545049398">+971 54 50 49 398</a>
         </div>
-        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium md:border-r-2 border-black px-2">
+        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium md:border-r-2 border-slate-300 px-2 hover:font-bold active:font-bold">
           <GithubLogo size={24} weight="duotone" />
           <a href="https://github.com/ginpin21" target="_blank">
             Ginpin21
           </a>
         </div>
-        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium ">
+        <div className="flex gap-2 items-center text-blue-900 text-xl font-ubuntu font-medium hover:font-bold active:font-bold">
           <LinkedinLogo size={24} weight="duotone" />
           <a
             href="https://www.linkedin.com/in/iftekhar-ahmed-b07b8a22a/"

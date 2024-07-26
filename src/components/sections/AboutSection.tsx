@@ -1,4 +1,4 @@
-import { CaretCircleUp, CaretCircleDown } from "@phosphor-icons/react";
+// import { CaretCircleUp, CaretCircleDown } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
@@ -7,15 +7,15 @@ const AboutSection = () => {
       id="about"
       className="font-ubuntu container h-full snap-start snap-always flex flex-col items-center justify-center gap-5 relative"
     >
-      <a href="#home" className="absolute right-2 top-10 hover:text-blue-800">
-        <CaretCircleUp size={36} weight="duotone" />
+      {/* <a href="#home" className="absolute right-2 top-10 hover:text-blue-800">
+        <CaretCircleUp size={24} weight="duotone" />
       </a>
       <a
         href="#skills"
         className="absolute right-2 bottom-10 hover:text-blue-800"
       >
-        <CaretCircleDown size={36} weight="duotone" />
-      </a>
+        <CaretCircleDown size={24} weight="duotone" />
+      </a> */}
 
       <motion.p
         initial={{ opacity: 0, x: "-100%" }}

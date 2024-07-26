@@ -20,7 +20,7 @@ const ProjectCard = ({
 }: Project) => {
   return (
     <motion.div
-      className="flex flex-col items-center gap-5 rounded-md shadow shadow-black/60 p-5 max-w-[450px]"
+      className="flex flex-col items-center gap-5 rounded-md border-2 p-2 w-full md:max-w-[450px]"
       initial={{ x: "100%" }}
       whileInView={{ x: 0 }}
     >

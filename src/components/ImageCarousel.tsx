@@ -45,6 +45,7 @@ const ImageCarousel = ({ imgList }: Props) => {
                   index === currentIndex && (
                     <motion.img
                       key={index}
+                      loading="lazy"
                       src={img}
                       initial={{
                         opacity: 0,
