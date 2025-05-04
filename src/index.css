@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap')
+layer(base);
+
+@import 'tailwindcss';
+
+@theme {
+  --font-*: initial;
+  --font-ubuntu: Ubuntu Sans, sans-serif;
+  --font-tungsten: Tungsten-Bold, sans-serif;
+  --font-virgil: Virgil, sans-serif;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+  @font-face {
+    font-family: 'Tungsten-Bold';
+    font-weight: 100;
+    src: url('./assets/Tungsten-Bold.ttf') format("ttf");
+  }
+  @font-face {
+    font-family: 'Virgil';
+    font-weight: 500;
+    src: url('./assets/Virgil.woff2') format("woff2");
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+  }
+  h2 {
+    font-size: var(--text-2xl);
+  }
+  h3 {
+    font-size: var(--text-xl);
+  }
+  h4 {
+    font-size: var(--text-lg);
+  }
+  ::-webkit-scrollbar {
+    width:0.4rem;
+    height:0.4rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-slate-950);
+    border-radius: var(--radius-md);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-blue-500);
+    border-radius: var(--radius-md);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
