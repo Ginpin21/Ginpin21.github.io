@@ -49,8 +49,8 @@ const ContactSection = () => {
           <p>Ginpin21</p>
         </a>
       </motion.div>
-      <motion.h2 initial={{ y: 50 }} whileInView={{ y: 0 }}>
-        <a target="_blank" href="/CV.pdf">Want to know more? Get my CV here</a>
+      <motion.h2 initial={{ y: 50 }} whileInView={{ y: 0 }} whileHover={{scale:1.1}}>
+        <a target="_blank" href="/CV.pdf">Want to know more? Get my CV <span className="underline">here</span></a>
       </motion.h2>
     </motion.section>
   );

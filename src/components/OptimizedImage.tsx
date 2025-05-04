@@ -33,7 +33,7 @@ export default function OptimizedImage({
   },[setIsLoading]);
 
   return (
-    <div className="relative h-full w-full">
+    <div className="relative inline-block align-middle">
       {isLoading && (
         <LoadingSpinner className="absolute inset-0 m-auto" />
       )}
@@ -41,7 +41,7 @@ export default function OptimizedImage({
         ref={imgRef}
         loading="lazy"
         alt={alt}
-        className={cn("w-full h-full object-contain", className)}
+        className={cn("block w-full h-full object-contain", className)}
         {...rest}
       />
     </div>

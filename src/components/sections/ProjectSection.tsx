@@ -50,7 +50,11 @@ const ProjectSection = () => {
     },
     {
       title: "ABC Restaurant",
-      description: `ABC Restaurant is a restaurant website that allows for users to order food online and make reservations. It is created with React and Tailwind CSS to allow for an easy to use interface. Powered by MongoDB and ExpressJS in the backend.`,
+      description: `Restaurant website created with React and Tailwind CSS in the frontend to allow for an easy to use interface. Powered by MongoDB and ExpressJS in the backend.
+      
+      - Menu with sorting and filtering to find your favourite meal
+      - Ordering system to deliver food to your doorstep
+      - Reservation system to book your table beforehand`,
       imgList: abcRestaurantImages,
       website: "https://abc-restaurant-1.netlify.app/",
       isPrivate: false,

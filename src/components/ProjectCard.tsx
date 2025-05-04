@@ -114,7 +114,7 @@ function ProjectImages({ imgList }: { imgList: Project["imgList"] }) {
                 e.stopPropagation();
               }}
             >
-              <button className="cursor-pointer group absolute text-3xl lg:text-5xl text-white -bottom-10 -left-2 lg:bottom-1/2 lg:top-1/2 lg:left-5" onClick={()=>changeImage(false)}>
+              <button className="z-50 cursor-pointer group absolute text-3xl lg:text-5xl text-white -bottom-10 -left-2 lg:bottom-1/2 lg:top-1/2 lg:left-5" onClick={()=>changeImage(false)}>
                 <CaretLeft className="bg-blue-500/70 group-hover:bg-blue-500 rounded-full p-2"/>
               </button>
               <OptimizedImage
@@ -122,7 +122,7 @@ function ProjectImages({ imgList }: { imgList: Project["imgList"] }) {
                 alt=""
                 className="rounded-md"
               />
-              <button className="cursor-pointer group absolute text-3xl lg:text-5xl text-white -bottom-10 -right-2 lg:bottom-1/2 lg:top-1/2 lg:right-5" onClick={()=>changeImage(true)}>
+              <button className="z-50 cursor-pointer group absolute text-3xl lg:text-5xl text-white -bottom-10 -right-2 lg:bottom-1/2 lg:top-1/2 lg:right-5" onClick={()=>changeImage(true)}>
                 <CaretRight className="bg-blue-500/70 group-hover:bg-blue-500 rounded-full p-2"/>
               </button>
             </div>
@@ -132,11 +132,11 @@ function ProjectImages({ imgList }: { imgList: Project["imgList"] }) {
       <div className="flex gap-1 justify-center-safe overflow-x-auto pb-2">
         {imgList.map((img, index) => {
           return (
-            <OptimizedImage
+            <img
               key={index}
               src={img}
               alt=""
-              className={`w-32 rounded-md cursor-pointer border-4  ${currentImageIndex===index ? ' border-blue-500' :'border-transparent'}`}
+              className={`w-32 h-full rounded-md cursor-pointer border-4 ${currentImageIndex===index ? ' border-blue-500' :'border-transparent'}`}
               onClick={() => setCurrentImageIndex(index)}
             />
           );
