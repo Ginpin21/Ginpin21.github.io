@@ -47,7 +47,7 @@ const Nav = () => {
         <h1 className="font-virgil text-shadow-md text-shadow-blue-500/50 text-2xl lg:text-3xl">
           <a href="#">Iftakhar Ahmed</a>
         </h1>
-        <nav className="text-lg hidden lg:flex gap-5 font-ubuntu font-medium ">
+        <nav className="text-lg hidden lg:flex gap-5 font-ubuntu font-medium">
           {navLinks.map((navLink) => {
             return (
               <motion.a
@@ -55,8 +55,9 @@ const Nav = () => {
                 href={navLink.href}
                 whileHover={{
                   scale: 1.1,
+                  color:"var(--color-blue-500)"
                 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.2}}
               >
                 {navLink.name}
               </motion.a>

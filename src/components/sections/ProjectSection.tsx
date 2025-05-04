@@ -3,12 +3,10 @@ import { motion } from "framer-motion";
 import ProjectCard from "../ProjectCard";
 import SwiftLMSImages from "../images/SwiftLMSImages";
 import WincLibMgmtImages from "../images/WincLibMgmtImages";
+import WincCatalogueImages from "../images/WincCatalogueImages";
 import ABCRestaurantImages from "../images/ABCRestaurantImages";
 import PluginElectronicsImages from "../images/PluginElectronicsImages";
 const ProjectSection = () => {
-  const swiftLMSImages = SwiftLMSImages;
-  const wincLibMgmtImages = WincLibMgmtImages;
-  const abcRestaurantImages = ABCRestaurantImages;
   const projects = [
     {
       title: "Plugin Electronics",
@@ -32,8 +30,20 @@ const ProjectSection = () => {
               - Role Based Access Control with 3 roles; Admin, Teacher and Student
               - Upload Assignments and assignment submissions
               - Realtime chat feature and a discussion board for subjects`,
-      imgList: swiftLMSImages,
+      imgList: SwiftLMSImages,
       website: "https://swift-lms.vercel.app/",
+      isPrivate: false,
+    },
+    {
+      title: "WINC E-Catalogue",
+      description: `WINC E-Catalogue is a digital database of all the physical books available at the WINC RAK Campus Library. Made to help staff and and students find books and check their availability easily. Powered by React and Supabase.
+      
+      - 5000+ books
+      - Detailed book information like ISBN and covers from open-library
+      - Search engine to filter by subject,title or author
+      - Local favourites to keep track of any books you like`,
+      imgList: WincCatalogueImages,
+      website: "https://winc-catalogue.netlify.app/",
       isPrivate: false,
     },
     {
@@ -44,8 +54,8 @@ const ProjectSection = () => {
       - Register new members
       - Issue books to members
       - Search engine to find specific books to help members`,
-      imgList: wincLibMgmtImages,
-      website: "https://swift-lms.vercel.app/",
+      imgList: WincLibMgmtImages,
+      website: "https://winc-library.vercel.app/",
       isPrivate: false,
     },
     {
@@ -55,7 +65,7 @@ const ProjectSection = () => {
       - Menu with sorting and filtering to find your favourite meal
       - Ordering system to deliver food to your doorstep
       - Reservation system to book your table beforehand`,
-      imgList: abcRestaurantImages,
+      imgList: ABCRestaurantImages,
       website: "https://abc-restaurant-1.netlify.app/",
       isPrivate: false,
     },
