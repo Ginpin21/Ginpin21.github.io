@@ -1,6 +1,4 @@
-// import { CaretCircleDown } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
-import portraitURL from "./../../assets/Stolen_coat.webp";
 
 const HomeSection = () => {
   return (
@@ -28,7 +26,7 @@ const HomeSection = () => {
         </motion.p>
       </div>
       <motion.img
-        src={portraitURL}
+        src={`https://res.cloudinary.com/djuatpgsk/image/upload/Stolen_coat_ujrpwf.webp`}
         loading="lazy"
         alt=""
         className="max-h-[400px] lg:max-h-[600px] mask-b-from-5%"
