@@ -7,7 +7,7 @@ import ContactSection from "./components/sections/ContactSection";
 const App = () => {
   
   return (
-    <main className="container mx-auto min-h-dvh">
+    <main className="mx-auto max-w-[2200px] min-h-dvh">
       <Nav />
       <HomeSection />
       <AboutSection/>
