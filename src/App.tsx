@@ -7,7 +7,7 @@ import ContactSection from "./components/sections/ContactSection";
 const App = () => {
   
   return (
-    <main className="container mx-auto bg-slate-300 dark:bg-slate-950 text-slate-900 dark:text-slate-50 min-h-dvh">
+    <main className="container mx-auto min-h-dvh">
       <Nav />
       <HomeSection />
       <AboutSection/>

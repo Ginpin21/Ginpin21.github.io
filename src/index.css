@@ -36,7 +36,10 @@ layer(base);
     font-weight: 500;
     src: url('./assets/Virgil.woff2') format("woff2");
   }
-
+  
+  html, body {
+    @apply bg-slate-300 dark:bg-slate-950 text-slate-900 dark:text-slate-50;
+  }
   h1 {
     font-size: var(--text-3xl);
   }
